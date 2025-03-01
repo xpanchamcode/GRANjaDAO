@@ -40,7 +40,7 @@ public class AnimalController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/animal")
     public ResponseEntity<?> addAnimal(@Valid @RequestBody Animal animal) {
         try{
             Animal animalSave = animalService.save(animal);
